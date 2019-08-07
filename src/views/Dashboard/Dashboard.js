@@ -33,13 +33,13 @@ const brandDanger = getStyle('--danger')
 
 // Card Chart 1
 const cardChartData1 = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','aout','October','septembre','Novembre','Decembre'],
   datasets: [
     {
       label: 'My First dataset',
       backgroundColor: brandPrimary,
       borderColor: 'rgba(255,255,255,.55)',
-      data: [65, 59, 84, 84, 51, 55, 40],
+      data: [20,65, 59, 84, 84, 51, 55, 40,50,60,50,50],
     },
   ],
 };

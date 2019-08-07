@@ -72,8 +72,10 @@ const routes = [
   { path: '/icons/font-awesome', name: 'Font Awesome', component: FontAwesome },
   { path: '/icons/simple-line-icons', name: 'Simple Line Icons', component: SimpleLineIcons },
   { path: '/notifications', exact: true, name: 'Notifications', component: Alerts },
-  { path: '/notifications/alerts', name: 'Alerts', component: Alerts },
-  { path: '/notifications/badges', name: 'Badges', component: Badges },
+  { path: '/notifications/alerts', name: 'Alerts', component: Breadcrumbs },
+    { path: '/notifications/project', name: 'Alerts', component: Alerts },
+
+  { path: '/notifications/badges', name: 'Badges', component: BrandButtons },
   { path: '/notifications/modals', name: 'Modals', component: Modals },
   { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/charts', name: 'Charts', component: Charts },

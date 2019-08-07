@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Badge, Card, CardBody, CardFooter, CardHeader, Col, Row, Collapse, Fade } from 'reactstrap';
+import { Badge, Card, CardBody, CardFooter, CardHeader, Col, Row, Collapse, Fade ,Button} from 'reactstrap';
 import { AppSwitch } from '@coreui/react'
 
 class Cards extends Component {
@@ -29,91 +29,167 @@ class Cards extends Component {
         
         
        
+       
         
         <Row>
-          <Col xs="12" sm="6" md="4">
-            <Card className="text-white bg-warning">
-              <CardHeader>
-                   Projet
-                   <div className="card-header-actions">
-                    {/*eslint-disable-next-line*/}
-                    <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
-                    {/*eslint-disable-next-line*/}
+         <Row> 
+           <Col xs="12" sm="6" md="4">
+            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Card className="border-warning">
+                <CardHeader>
                 
-                  </div>  
-              </CardHeader>
-              <CardBody>
-                Description du projet
-              </CardBody>
-            </Card>
-          </Col>
-          <Col xs="12" sm="6" md="4">
-            <Card className="text-white bg-warning">
-              <CardHeader>
-                Projet
+                  Card actions
                   <div className="card-header-actions">
                     {/*eslint-disable-next-line*/}
                     <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
                     {/*eslint-disable-next-line*/}
-                
+                    <a className="card-header-action btn btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i className="icon-close"></i></a>
                   </div>
-              </CardHeader>
-              <CardBody>
-                Description du projet
-              </CardBody>
-            </Card>
+                </CardHeader>
+                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                  <CardBody>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  </CardBody>
+                </Collapse>
+              </Card>
+            </Fade>
           </Col>
-          <Col xs="12" sm="6" md="4">
-            <Card className="text-white bg-warning">
-              <CardHeader>
-                Nom du projet
+           
+               <Col xs="12" sm="6" md="4">
+            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Card className="border-warning">
+                <CardHeader>
+                
+                  Card actions
                   <div className="card-header-actions">
                     {/*eslint-disable-next-line*/}
                     <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
                     {/*eslint-disable-next-line*/}
-                
+                    <a className="card-header-action btn btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i className="icon-close"></i></a>
                   </div>
-              </CardHeader>
-              <CardBody>
-                 Description du projet
-              </CardBody>
-            </Card>
+                </CardHeader>
+                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                  <CardBody>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  </CardBody>
+                </Collapse>
+              </Card>
+            </Fade>
           </Col>
-          <Col xs="12" sm="6" md="4">
-            <Card className="text-white bg-warning">
-              <CardHeader>
-                Nom du projet
+       <Col xs="12" sm="6" md="4">
+            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Card className="border-warning">
+                <CardHeader>
+                
+                  Card actions
                   <div className="card-header-actions">
                     {/*eslint-disable-next-line*/}
                     <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
                     {/*eslint-disable-next-line*/}
-                
-                  </div>
-              </CardHeader>
-              <CardBody>
-              Description du projet
-              </CardBody>
-            </Card>
-          </Col>
-          <Col xs="12" sm="6" md="4">
-            <Card className="text-white bg-warning">
-              <CardHeader>
-                Card title
-               <div className="card-header-actions">
+                    <a className="card-header-action btn btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
                     {/*eslint-disable-next-line*/}
-                    <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
-                    {/*eslint-disable-next-line*/}
-                
+                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i className="icon-close"></i></a>
                   </div>
-              </CardHeader>
-              <CardBody>
-                Description du projet
-              </CardBody>
-            </Card>
+                </CardHeader>
+                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                  <CardBody>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  </CardBody>
+                </Collapse>
+              </Card>
+            </Fade>
           </Col>
-         
-
         </Row>
+             <Row> 
+           <Col xs="12" sm="6" md="4">
+            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Card className="border-warning">
+                <CardHeader>
+                
+                  Card actions
+                  <div className="card-header-actions">
+                    {/*eslint-disable-next-line*/}
+                    <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i className="icon-close"></i></a>
+                  </div>
+                </CardHeader>
+                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                  <CardBody>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  </CardBody>
+                </Collapse>
+              </Card>
+            </Fade>
+          </Col>
+           
+               <Col xs="12" sm="6" md="4">
+            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Card className="border-warning">
+                <CardHeader>
+                
+                  Card actions
+                  <div className="card-header-actions">
+                    {/*eslint-disable-next-line*/}
+                    <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i className="icon-close"></i></a>
+                  </div>
+                </CardHeader>
+                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                  <CardBody>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  </CardBody>
+                </Collapse>
+              </Card>
+            </Fade>
+          </Col>
+       <Col xs="12" sm="6" md="4">
+            <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
+            <Card className="border-warning">
+                <CardHeader>
+                
+                  Card actions
+                  <div className="card-header-actions">
+                    {/*eslint-disable-next-line*/}
+                    <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
+                    {/*eslint-disable-next-line*/}
+                    <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i className="icon-close"></i></a>
+                  </div>
+                </CardHeader>
+                <Collapse isOpen={this.state.collapse} id="collapseExample">
+                  <CardBody>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  </CardBody>
+                </Collapse>
+              </Card>
+            </Fade>
+          </Col>
+        </Row>
+       </Row>
+        
       </div>
     );
   }
