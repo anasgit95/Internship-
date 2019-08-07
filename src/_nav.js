@@ -40,17 +40,17 @@ export default {
       children: [
         
         {
-          name: 'Button dropdowns',
+          name: 'Tous les Etudiants',
           url: '/buttons/button-dropdowns',
           icon: 'icon-cursor',
         },
         {
-          name: 'Button groups',
+          name: 'Etudiants approuvées',
           url: '/buttons/button-groups',
           icon: 'icon-cursor',
         },
         {
-          name: 'Brand Buttons',
+          name: 'Étudiant en attentes ',
           url: '/buttons/brand-buttons',
           icon: 'icon-cursor',
         },
@@ -59,25 +59,21 @@ export default {
       
     
     {
-      name: 'Notifications',
+      name: 'Mes projets',
       url: '/notifications',
       icon: 'icon-bell',
       children: [
         {
-          name: 'Alerts',
+          name: 'Projets Selectionnés ',
           url: '/notifications/alerts',
           icon: 'icon-bell',
         },
         {
-          name: 'Badges',
+          name: 'Étudiants ',
           url: '/notifications/badges',
           icon: 'icon-bell',
         },
-        {
-          name: 'Modals',
-          url: '/notifications/modals',
-          icon: 'icon-bell',
-        },
+      
       ],
     },
 
