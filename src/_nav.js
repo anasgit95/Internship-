@@ -17,12 +17,12 @@ export default {
       children: [
         {
           name: 'tous les projets ',
-          url: '/base/breadcrumbs',
+          url: '/base/Breadcrumbs',
           icon: 'icon-puzzle',
         },
         {
           name: 'projets en cours ',
-          url: '/base/cards',
+          url: '/base/Cards',
           icon: 'icon-puzzle',
         },
         {

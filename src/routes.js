@@ -2,11 +2,12 @@ import React from 'react';
 
 const Breadcrumbs = React.lazy(() => import('./views/Base/Breadcrumbs'));
 const Cards = React.lazy(() => import('./views/Base/Cards'));
+const Mademande = React.lazy(() => import('./views/Base/Mademande/Mademande'));
+
 const Carousels = React.lazy(() => import('./views/Base/Carousels'));
 const Collapses = React.lazy(() => import('./views/Base/Collapses'));
 const Dropdowns = React.lazy(() => import('./views/Base/Dropdowns'));
 const Forms = React.lazy(() => import('./views/Base/Forms'));
-const Jumbotrons = React.lazy(() => import('./views/Base/Jumbotrons'));
 const ListGroups = React.lazy(() => import('./views/Base/ListGroups'));
 const Navbars = React.lazy(() => import('./views/Base/Navbars'));
 const Navs = React.lazy(() => import('./views/Base/Navs'));
@@ -23,6 +24,8 @@ const ButtonGroups = React.lazy(() => import('./views/Buttons/ButtonGroups'));
 const Buttons = React.lazy(() => import('./views/Buttons/Buttons'));
 const Charts = React.lazy(() => import('./views/Charts'));
 const Dashboard = React.lazy(() => import('./views/Dashboard'));
+const Dashboard1 = React.lazy(() => import('./views/Dashboard/Dashboard1'));
+
 const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/Icons/Flags'));
 const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));
@@ -40,6 +43,10 @@ const User = React.lazy(() => import('./views/Users/User'));
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/dashboard1', name: 'Dashboard', component: Dashboard1 },
+    { path: '/base/Mademande', name: 'Mademande', component: Mademande },
+
+
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
@@ -53,7 +60,6 @@ const routes = [
   { path: '/base/carousels', name: 'Carousel', component: Carousels },
   { path: '/base/collapses', name: 'Collapse', component: Collapses },
   { path: '/base/dropdowns', name: 'Dropdowns', component: Dropdowns },
-  { path: '/base/jumbotrons', name: 'Jumbotrons', component: Jumbotrons },
   { path: '/base/list-groups', name: 'List Groups', component: ListGroups },
   { path: '/base/navbars', name: 'Navbars', component: Navbars },
   { path: '/base/navs', name: 'Navs', component: Navs },

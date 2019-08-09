@@ -23,6 +23,7 @@ import {
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 
+
 const Widget03 = lazy(() => import('../../views/Widgets/Widget03'));
 
 const brandPrimary = getStyle('--primary')
@@ -454,16 +455,18 @@ const mainChartOpts = {
 
 class Dashboard extends Component {
   constructor(props) {
+      
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.onRadioBtnClick = this.onRadioBtnClick.bind(this);
 
     this.state = {
+  
       dropdownOpen: false,
       radioSelected: 2,
     };
   }
+
 
   toggle() {
     this.setState({
@@ -632,7 +635,7 @@ class Dashboard extends Component {
                       <Progress className="progress-xs" color="success" value="50" />
                     
                     <td className="text-center">
-                  <p> Etudiant Etudiant </p>
+                  <p> </p>
                     </td>
                     <td>
                       <strong>Non disponible </strong>
@@ -720,13 +723,13 @@ class Dashboard extends Component {
                     <td>
                       <div className="clearfix">
                         <div className="float-left">
-                          <strong>98%</strong>
+                          <strong>0%</strong>
                         </div>
                         <div className="float-right">
                           <small className="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                         </div>
                       </div>
-                      <Progress className="progress-xs" color="danger" value="98" />
+                      <Progress className="progress-xs" color="danger" value="0" />
                     </td>
                     <td className="text-center">
                                 <p> User User </p>

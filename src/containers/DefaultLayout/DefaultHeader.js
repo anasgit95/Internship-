@@ -20,7 +20,7 @@ class DefaultHeader extends Component {
 
     return (
       <React.Fragment>
-        <AppSidebarToggler className="d-lg-none" display="md" mobile />
+        <AppSidebarToggler className="d-lg-none" display="md" isOpen={false} mobile />
       
         <AppSidebarToggler className="d-md-down-none" display="lg" />
         <AppNavbarBrand
