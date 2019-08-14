@@ -17,41 +17,41 @@ export default {
       children: [
         {
           name: 'tous les projets ',
-          url: '/base/Breadcrumbs',
+          url: '/Liste/touslesprojets',
           icon: 'icon-puzzle',
         },
         {
           name: 'projets en cours ',
-          url: '/base/Cards',
+          url: '/Liste/ProjetsenCours',
           icon: 'icon-puzzle',
         },
         {
           name: 'projets libres',
-          url: '/base/carousels',
+          url: '/Liste/Projetslibres',
           icon: 'icon-puzzle',
         },
     
       ],
     },
     {
-      name: 'Liste des Etudiant ',
-      url: '/buttons',
+      name: 'Liste des Etudiants ',
+      url: '/Etudiant',
       icon: 'icon-cursor',
       children: [
         
         {
           name: 'Tous les Etudiants',
-          url: '/buttons/button-dropdowns',
+          url: '/Etudiants/Tous',
           icon: 'icon-cursor',
         },
         {
           name: 'Etudiants approuvées',
-          url: '/buttons/button-groups',
+          url: '/Etudiants/approuvées',
           icon: 'icon-cursor',
         },
         {
           name: 'Étudiant en attentes ',
-          url: '/buttons/brand-buttons',
+          url: '/Etudiants/EnAttentes',
           icon: 'icon-cursor',
         },
       ],
@@ -60,17 +60,17 @@ export default {
     
     {
       name: 'Mes projets',
-      url: '/notifications',
+      url: '/MesProjets',
       icon: 'icon-bell',
       children: [
         {
           name: 'Projets Selectionnés ',
-          url: '/notifications/alerts',
+          url: '/MesProjets/ProjetsSelectionnes',
           icon: 'icon-bell',
         },
         {
           name: 'Étudiants ',
-          url: '/notifications/badges',
+          url: '/MesProjets/MesProjets',
           icon: 'icon-bell',
         },
       

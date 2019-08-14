@@ -40,31 +40,33 @@ class ButtonGroups extends Component {
                     <th>Status du projet</th>
                   </tr>
                   </thead>
+                   {this.state.user.map(user=>
                   <tbody>
                 
               
                
                   <tr>
-                    <td>Aulus Agmundr</td>
-                    <td>2012/01/21</td>
-                    <td>2012/01/01</td>
+                    <td>{user.Firstname}</td>
+                    <td>{user.DateFin}</td>
+                    <td>{user.DateDeDebut}</td>
 
-                     <td>--</td>
-                    <td>--</td>
+                     <td>{user.Encadrant}</td>
+                    <td>{user.Projet}</td>
                    <td>
                        <div className="clearfix">
                         <div className="float-left">
-                          <strong>0%</strong>
+                          <strong>{user.statusDuProject}%</strong>
                         </div>
                         <div className="float-right">
-                          <small className="text-muted">Jun 11, 2019 - Jul 10, 2019</small>
+                          <small className="text-muted">{user.DateFin} - {user.DateDeDebut}</small>
                         </div>
                       </div>
-                      <Progress className="progress-xs" color="warning" value="0" />
+                      <Progress className="progress-xs" color="danger" value={user.statusDuProject} />
                     </td>
                   </tr>
                   
                   </tbody>
+                  )}
                 </Table>
                 <nav>
                   <Pagination>

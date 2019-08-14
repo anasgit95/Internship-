@@ -26,13 +26,13 @@ export default {
     },
     {
       name: 'Projects ',
-      url: '/buttons',
+      url: 'Projects',
       icon: 'icon-cursor',
       children: [
         
         {
           name: 'Tous les Projects',
-          url: '/buttons/button-dropdowns',
+          url: '/Liste/touslesprojets ',
           icon: 'icon-cursor',
         },
         {
