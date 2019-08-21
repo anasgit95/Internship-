@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Breadcrumbs = React.lazy(() => import('./views/Base/Breadcrumbs'));
+const NewProject = React.lazy(() => import('./views/Base/Breadcrumbs/NewProject'));
+
 const Cards = React.lazy(() => import('./views/Base/Cards'));
 const Mademande = React.lazy(() => import('./views/Base/Mademande/Mademande'));
 
@@ -80,6 +82,7 @@ const routes = [
   { path: '/MesProjets', exact: true, name: 'Mes Projets', component: Alerts },
   { path: '/MesProjets/ProjetsSelectionnes', name: 'Projet ProjetsSelectionnes', component: Breadcrumbs },
     { path: '/MesProjets/ProjetsSelectionnes', name: 'Projet ProjetsSelectionnes ', component: Alerts },
+  { path: '/MesProjets/NewProject', name: 'NewProjet', component: NewProject },
 
   { path: '/MesProjets/MesProjets', name: 'Mes Projets', component: BrandButtons },
   { path: '/notifications/modals', name: 'Modals', component: Modals },

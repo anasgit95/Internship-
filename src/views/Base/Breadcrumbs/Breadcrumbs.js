@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Badge, Card, CardBody, CardFooter, CardHeader, Col, Row, Collapse, Fade,Button} from 'reactstrap';
-import { AppSwitch } from '@coreui/react'
+import { AppSwitch } from '@coreui/react';
+import axios from 'axios';
 
 class Breadcrumbs extends Component {
   constructor(props) {
@@ -16,9 +17,12 @@ class Breadcrumbs extends Component {
     };
   }
   componentDidMount() {
-  fetch('/api/customers')
-  .then(res=>res.json())
-  .then(customers=>this.setState({customers},()=>console.log('customers fetched..',customers) ));
+  axios.get('/api/Encadrant')
+  .then((res)=>{
+this.setState({customers:res.data});
+console.log(this.state.customers);
+
+   })
 }
 
   toggle() {
@@ -34,7 +38,7 @@ class Breadcrumbs extends Component {
       <div className="animated fadeIn">
         <Row>
           <Col xs="12" sm="6" md="12">
-             <Button href="http://localhost:3000/Alerts#/notifications/project"block color="primary">Ajouter Un projet</Button>
+             <Button href="http://localhost:3000/#/MesProjets/NewProject"block color="primary">Ajouter Un projet</Button>
              <br/>
            </Col>
         </Row>
@@ -43,24 +47,24 @@ class Breadcrumbs extends Component {
   
                  <Row> 
 
-         {this.state.customers.map(customer=>
+      {this.state.customers.map(customers=> 
            <Col xs="12" sm="6" md="4">
             <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
             <Card className="border-danger">
                 <CardHeader>
-                  {customer.ProjectName}              
+                                        {this.state.customers[0].firstname}              
                    <div className="card-header-actions">
                     {/*eslint-disable-next-line*/}
                     <a href="#" className="card-header-action btn btn-setting"><i className="icon-settings"></i></a>
                     {/*eslint-disable-next-line*/}
-                    <a className="card-header-action btn btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
+                    <a className="card-header-action btn btn-minimize" customers-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></a>
                     {/*eslint-disable-next-line*/}
                     <a className="card-header-action btn btn-close" onClick={this.toggleFade}><i className="icon-close"></i></a>
                   </div>
                 </CardHeader>
                 <Collapse isOpen={this.state.collapse} id="collapseExample">
                   <CardBody>
-                                        {customer.ProjectDescription}              
+                                        {this.state.customers[0].firstname}              
 
                   </CardBody>
                 </Collapse>
